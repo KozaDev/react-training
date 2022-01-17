@@ -1,0 +1,12 @@
+.search-bar {
+  margin: 10px;
+  padding: 5px;
+}
+
+.search-bar input {
+  margin: 10px 0;
+}
+
+.search-bar input[type="checkbox"] {
+  margin-right: 5px;
+}
