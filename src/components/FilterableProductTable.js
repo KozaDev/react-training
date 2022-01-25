@@ -25,7 +25,9 @@ class FilterableProductTable extends React.Component {
     const key = e.target.name;
 
     if (inputType === "checkbox") {
-      this.setState({ [key]: !this.state[key] });
+      this.setState((state, props) => ({
+        [key]: !state.key,
+      }));
     } else if (inputType === "text") {
       this.setState({ [key]: value });
     }
